@@ -41,7 +41,7 @@ const responseSchema: Schema = {
   required: ["englishName", "quickScript", "mechanism", "mfdsApproved", "mfdsFunctionality", "evidenceLinks", "interactions", "consultingPoints"]
 };
 
-const FALLBACK_MODELS = ['gemini-3.6-flash', 'gemini-3.1-pro-preview'];
+const FALLBACK_MODELS = ['gemini-2.5-flash', 'gemini-3.1-pro-preview'];
 
 export async function POST(req: Request) {
   try {
